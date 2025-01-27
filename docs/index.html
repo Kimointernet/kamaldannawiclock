@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم احترافي و متحرك لاسم Kamal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* تصميم النص الأساسي */
+        .logo {
+            font-family: 'Arial', sans-serif;
+            font-size: 100px;
+            font-weight: bold;
+            color: #34495e;
+            text-transform: uppercase;
+            position: relative;
+            animation: textGlow 2s infinite alternate, moveText 2s ease-in-out infinite;
+        }
+
+        .logo span {
+            color: #2980b9;
+            position: relative;
+            display: inline-block;
+            animation: moveLetter 1.5s ease-in-out infinite alternate;
+        }
+
+        /* التأثير المتعلق بحركة النص */
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(41, 128, 185, 0.8), 0 0 20px rgba(41, 128, 185, 0.6), 0 0 30px rgba(41, 128, 185, 0.4);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(41, 128, 185, 1), 0 0 30px rgba(41, 128, 185, 0.8), 0 0 40px rgba(41, 128, 185, 0.6);
+            }
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes moveLetter {
+            0% {
+                transform: translateY(0);
+                color: #2980b9;
+            }
+            50% {
+                transform: translateY(-10px);
+                color: #f39c12;
+            }
+            100% {
+                transform: translateY(0);
+                color: #2980b9;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+           
+<a href="date.html"> K<span>a</span>m<span>a</span>l &nbsp;
+    a<span>l</span> &nbsp;D<span>a</span>n<span>n</span>a<span>w</span>i</a>
+        </div>
+    </div>
+    <br>
+    
+</body>
+</html>
